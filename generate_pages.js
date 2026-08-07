@@ -313,10 +313,21 @@ function applyNewMenus(htmlStr) {
   return modified;
 }
 
+const oldPreloader = `<span class="loader">UoK <span class="loading-text">University of Karachi</span></span>`;
+const newPreloader = `<span class="loader">University of Karachi <span class="loading-text">University of Karachi</span></span>`;
+
+function applyPreloaderFix(htmlStr) {
+  if (htmlStr.includes(oldPreloader)) {
+    return htmlStr.split(oldPreloader).join(newPreloader);
+  }
+  return htmlStr;
+}
+
 let baseHtml = fs.readFileSync('department-computerscience.html', 'utf8');
 
 // Apply new menus to base template so all generated pages get them
 baseHtml = applyNewMenus(baseHtml);
+baseHtml = applyPreloaderFix(baseHtml);
 
 const genericContent = (title) => \`
 <div class="breadcumb-wrapper position-relative" data-bg-src="assets/img/shape/breadcrumb-shep.png">
@@ -395,6 +406,7 @@ const files = fs.readdirSync(__dirname).filter(f => f.endsWith('.html'));
 for (const f of files) {
   let content = fs.readFileSync(f, 'utf8');
   let newContent = applyNewMenus(content);
+  newContent = applyPreloaderFix(newContent);
   
   // Custom updates from original _redo_all.js
   if (f === 'academics.html') {
