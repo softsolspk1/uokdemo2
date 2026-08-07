@@ -62,3 +62,13 @@
    rule (designed for a large transparent-cutout PNG), so a normal portrait
    photo needs explicit sizing to sit properly in the frame. */
 .chancellor-thumb .vc-photo{width:auto !important;height:92% !important;max-height:490px;left:0;right:0;margin:auto;border-radius:12px;object-fit:cover;box-shadow:0 20px 50px rgba(8,25,51,0.18)}
+
+/* Remove red bar from footer widget titles */
+.footer-widget .widget_title::before,
+.footer-widget .widget_title::after {
+    display: none !important;
+}
+.footer-widget .widget_title {
+    border-left: none !important;
+    padding-left: 0 !important;
+}
