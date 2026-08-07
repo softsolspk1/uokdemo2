@@ -987,56 +987,122 @@
   </div>
 </div>
 
-<section class="faq-area-1 position-relative space overflow-hidden">
+<section class="faq-area-1 position-relative space overflow-hidden" style="background-color: #f8f9fa;">
+  <style>
+    .custom-accordion .accordion-button:not(.collapsed) {
+      color: #c9002b !important;
+      background-color: #fff !important;
+      box-shadow: none !important;
+    }
+    .custom-accordion .accordion-button:focus {
+      box-shadow: none !important;
+      border-color: rgba(0,0,0,.125) !important;
+    }
+    .custom-accordion .accordion-item {
+      overflow: hidden;
+      transition: all 0.3s ease;
+    }
+    .custom-accordion .accordion-item:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+    }
+  </style>
   <div class="faq-shape1 shape-mockup" data-top="0%" data-left="0%"><img src="assets/img/shape/feature-shep-home-1.png" alt="shape"></div>
   <div class="faq-shape2 shape-mockup" data-bottom="0%" data-right="0%"><img src="assets/img/shape/feature-shep-2-home-1.png" alt="shape"></div>
-  <div class="faq-shape3 movingX shape-mockup" data-bottom="0%" data-right="2%"><img src="assets/img/shape/faq-1-1.png" alt="shape"></div>
   <div class="container">
-    <div class="row gy-30 gx-30 align-items-center justify-content-center">
-      <div class="col-xxl-4">
-        <div class="faq-imgbox wow fadeInLeft" data-wow-delay=".3s">
-          <div class="img1"><img src="assets/img/uok/header.jpg" alt="University of Karachi"> <img src="assets/img/uok/banner-chem.jpg" alt="University of Karachi"></div>
-          <div class="img2"><img src="assets/img/uok/hero-dpa.jpg" alt="University of Karachi"></div>
+    <div class="row gy-5 gx-5 align-items-center">
+      <div class="col-lg-5">
+        <div class="title-area mb-4 text-center text-lg-start">
+          <span class="sub-title text-anim" style="color: #c9002b; font-weight: bold; letter-spacing: 2px;">FAQ</span>
+          <h2 class="sec-title text-anim2" style="font-size: 2.5rem; font-weight: 700; color: #1a1a1a;">Frequently Asked Questions</h2>
+          <p class="box-text mt-3 wow fadeInUp" data-wow-delay=".3s" style="font-size: 1.1rem; color: #666;">Find answers to common questions about admissions, fees, and academics at the University of Karachi.</p>
+        </div>
+        <div class="faq-imgbox wow fadeInLeft" data-wow-delay=".4s">
+          <img src="assets/img/uok/banner-chem.jpg" alt="University of Karachi" class="img-fluid rounded-4 shadow-lg" style="object-fit: cover; height: 400px; width: 100%;">
         </div>
       </div>
-      <div class="col-xxl-8">
-        <div class="faq-content">
-          <div class="faq-wrap">
-            <div class="title-area">
-              <span class="sub-title text-anim">FAQ</span>
-              <h2 class="sec-title text-anim2">Frequently Asked Questions</h2>
-              <p class="box-text mt-20 wow fadeInUp" data-wow-delay=".3s">Common questions about admissions, fees and academics at the University of Karachi.</p>
-            </div>
-          </div>
-          <div class="faq-box">
-            <div class="faq-wrap1">
-              <div class="accordion" id="faqAccordion">
-                <div class="accordion-card wow fadeInUp" data-wow-delay=".1s">
-                  <div class="accordion-header" id="collapse-item-1"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">01. How do I apply for admission?</button></div>
-                  <div id="collapse-1" class="accordion-collapse collapse show" aria-labelledby="collapse-item-1" data-bs-parent="#faqAccordion"><div class="accordion-body"><p class="faq-text">Applications are submitted through the Directorate of Admissions for each program cycle. Visit the Admissions page for eligibility and required documents.</p></div></div>
-                </div>
-                <div class="accordion-card wow fadeInUp" data-wow-delay=".2s">
-                  <div class="accordion-header" id="collapse-item-2"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">02. Is an entry test required?</button></div>
-                  <div id="collapse-2" class="accordion-collapse collapse" aria-labelledby="collapse-item-2" data-bs-parent="#faqAccordion"><div class="accordion-body"><p class="faq-text">Most undergraduate and graduate programs require the University of Karachi Entry Test. Requirements vary by faculty and program.</p></div></div>
-                </div>
-                <div class="accordion-card wow fadeInUp" data-wow-delay=".3s">
-                  <div class="accordion-header" id="collapse-item-3"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-3" aria-expanded="false" aria-controls="collapse-3">03. What is the semester fee structure?</button></div>
-                  <div id="collapse-3" class="accordion-collapse collapse" aria-labelledby="collapse-item-3" data-bs-parent="#faqAccordion"><div class="accordion-body"><p class="faq-text">Fee vouchers are issued each semester through the Semester Cell. Contact the Registrar's office for the current fee schedule.</p></div></div>
-                </div>
-                <div class="accordion-card wow fadeInUp" data-wow-delay=".4s">
-                  <div class="accordion-header" id="collapse-item-4"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-4" aria-expanded="false" aria-controls="collapse-4">04. Are foreign students accepted?</button></div>
-                  <div id="collapse-4" class="accordion-collapse collapse" aria-labelledby="collapse-item-4" data-bs-parent="#faqAccordion"><div class="accordion-body"><p class="faq-text">Yes. The Foreign Students' Advisor supports international applicants through a dedicated admissions policy.</p></div></div>
-                </div>
-                <div class="accordion-card wow fadeInUp" data-wow-delay=".5s">
-                  <div class="accordion-header" id="collapse-item-5"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-5" aria-expanded="false" aria-controls="collapse-5">05. What faculties and departments are offered?</button></div>
-                  <div id="collapse-5" class="accordion-collapse collapse" aria-labelledby="collapse-item-5" data-bs-parent="#faqAccordion"><div class="accordion-body"><p class="faq-text">The University offers nine faculties and 53 academic departments — see the Academics page for the full list.</p></div></div>
-                </div>
-                <div class="accordion-card wow fadeInUp" data-wow-delay=".6s">
-                  <div class="accordion-header" id="collapse-item-6"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-6" aria-expanded="false" aria-controls="collapse-6">06. How can I contact the library?</button></div>
-                  <div id="collapse-6" class="accordion-collapse collapse" aria-labelledby="collapse-item-6" data-bs-parent="#faqAccordion"><div class="accordion-body"><p class="faq-text">The Dr. Mahmud Husain Library can be reached via the Library page, which lists services, hours and the digital library.</p></div></div>
+      <div class="col-lg-7">
+        <div class="faq-box">
+          <div class="accordion custom-accordion" id="faqAccordion">
+            
+            <div class="accordion-item border-0 mb-3 rounded-3 shadow-sm wow fadeInUp" data-wow-delay=".1s">
+              <h2 class="accordion-header" id="collapse-item-1">
+                <button class="accordion-button rounded-3 text-dark fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1" style="background-color: #fff; padding: 1.25rem; font-size: 1.1rem;">
+                  01. How do I apply for admission?
+                </button>
+              </h2>
+              <div id="collapse-1" class="accordion-collapse collapse show" aria-labelledby="collapse-item-1" data-bs-parent="#faqAccordion">
+                <div class="accordion-body text-muted" style="background-color: #fff; border-top: 1px solid #eee; padding: 1.25rem;">
+                  Applications are submitted through the Directorate of Admissions for each program cycle. Visit the Admissions page for eligibility and required documents.
                 </div>
               </div>
             </div>
+            
+            <div class="accordion-item border-0 mb-3 rounded-3 shadow-sm wow fadeInUp" data-wow-delay=".2s">
+              <h2 class="accordion-header" id="collapse-item-2">
+                <button class="accordion-button collapsed rounded-3 text-dark fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2" style="background-color: #fff; padding: 1.25rem; font-size: 1.1rem;">
+                  02. Is an entry test required?
+                </button>
+              </h2>
+              <div id="collapse-2" class="accordion-collapse collapse" aria-labelledby="collapse-item-2" data-bs-parent="#faqAccordion">
+                <div class="accordion-body text-muted" style="background-color: #fff; border-top: 1px solid #eee; padding: 1.25rem;">
+                  Most undergraduate and graduate programs require the University of Karachi Entry Test. Requirements vary by faculty and program.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item border-0 mb-3 rounded-3 shadow-sm wow fadeInUp" data-wow-delay=".3s">
+              <h2 class="accordion-header" id="collapse-item-3">
+                <button class="accordion-button collapsed rounded-3 text-dark fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-3" aria-expanded="false" aria-controls="collapse-3" style="background-color: #fff; padding: 1.25rem; font-size: 1.1rem;">
+                  03. What is the semester fee structure?
+                </button>
+              </h2>
+              <div id="collapse-3" class="accordion-collapse collapse" aria-labelledby="collapse-item-3" data-bs-parent="#faqAccordion">
+                <div class="accordion-body text-muted" style="background-color: #fff; border-top: 1px solid #eee; padding: 1.25rem;">
+                  Fee vouchers are issued each semester through the Semester Cell. Contact the Registrar's office for the current fee schedule.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item border-0 mb-3 rounded-3 shadow-sm wow fadeInUp" data-wow-delay=".4s">
+              <h2 class="accordion-header" id="collapse-item-4">
+                <button class="accordion-button collapsed rounded-3 text-dark fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-4" aria-expanded="false" aria-controls="collapse-4" style="background-color: #fff; padding: 1.25rem; font-size: 1.1rem;">
+                  04. Are foreign students accepted?
+                </button>
+              </h2>
+              <div id="collapse-4" class="accordion-collapse collapse" aria-labelledby="collapse-item-4" data-bs-parent="#faqAccordion">
+                <div class="accordion-body text-muted" style="background-color: #fff; border-top: 1px solid #eee; padding: 1.25rem;">
+                  Yes. The Foreign Students' Advisor supports international applicants through a dedicated admissions policy.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item border-0 mb-3 rounded-3 shadow-sm wow fadeInUp" data-wow-delay=".5s">
+              <h2 class="accordion-header" id="collapse-item-5">
+                <button class="accordion-button collapsed rounded-3 text-dark fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-5" aria-expanded="false" aria-controls="collapse-5" style="background-color: #fff; padding: 1.25rem; font-size: 1.1rem;">
+                  05. What faculties and departments are offered?
+                </button>
+              </h2>
+              <div id="collapse-5" class="accordion-collapse collapse" aria-labelledby="collapse-item-5" data-bs-parent="#faqAccordion">
+                <div class="accordion-body text-muted" style="background-color: #fff; border-top: 1px solid #eee; padding: 1.25rem;">
+                  The University offers nine faculties and 53 academic departments — see the Academics page for the full list.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item border-0 mb-3 rounded-3 shadow-sm wow fadeInUp" data-wow-delay=".6s">
+              <h2 class="accordion-header" id="collapse-item-6">
+                <button class="accordion-button collapsed rounded-3 text-dark fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-6" aria-expanded="false" aria-controls="collapse-6" style="background-color: #fff; padding: 1.25rem; font-size: 1.1rem;">
+                  06. How can I contact the library?
+                </button>
+              </h2>
+              <div id="collapse-6" class="accordion-collapse collapse" aria-labelledby="collapse-item-6" data-bs-parent="#faqAccordion">
+                <div class="accordion-body text-muted" style="background-color: #fff; border-top: 1px solid #eee; padding: 1.25rem;">
+                  The Dr. Mahmud Husain Library can be reached via the Library page, which lists services, hours and the digital library.
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
